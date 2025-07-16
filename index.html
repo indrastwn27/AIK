@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda - Panduan Sholat</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: url('Foto/Muham.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-box {
+      background: rgba(255, 255, 255, 0.8); /* transparan tipis tapi tidak buram */
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .content-box h1 {
+      font-size: 28px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    p {
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .button-group {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.03);
+    }
+
+    @media (min-width: 500px) {
+      .button-group {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      button {
+        width: 200px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 15px;
+      color: #555;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content-wrapper">
+    <div class="content-box">
+      <h1>Panduan Tata Cara Sholat</h1>
+
+      <h2>Nama Kelompok</h2>
+      <p>Indra Setiawan</p>
+      <p>Ardian Pratama Dzaky Ramadhan</p> 
+
+      <h2>Dosen Pengampu</h2>
+      <p>Dedy Suryadi, S.Pd, M.Pd</p>
+
+      <div class="button-group">
+        <button onclick="location.href='dewasa.html'">Sholat Dewasa (Laki-laki)</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Tugas UAS AIK 4 | Dibuat oleh Kelompok Indra & Ardian
+  </footer>
+
+</body>
+</html>
