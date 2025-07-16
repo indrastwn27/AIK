@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panduan Sholat Dewasa</title>
   <style>
     body {
@@ -98,6 +97,7 @@
       justify-content: center;
       gap: 15px;
       margin-top: 20px;
+      flex-wrap: wrap;
     }
 
     button {
@@ -129,6 +129,61 @@
       text-align: center;
       padding: 15px;
       border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+        scroll-behavior: smooth;
+        position: relative;
+      }
+
+      .sidebar h3 {
+        display: none;
+      }
+
+      .sidebar-item {
+        flex: 0 0 auto;
+        width: 80px;
+        margin-right: 10px;
+      }
+
+      .sidebar-item p {
+        font-size: 12px;
+      }
+
+      .main {
+        padding: 10px;
+      }
+
+      #imageDisplay {
+        max-height: 250px;
+      }
+
+      .bacaan .arab {
+        font-size: 22px;
+      }
+
+      .bacaan .latin {
+        font-size: 16px;
+      }
+
+      .bacaan .arti {
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 8px 14px;
+      }
     }
   </style>
 </head>
